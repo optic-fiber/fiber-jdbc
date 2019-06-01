@@ -9,15 +9,16 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
+
 import org.junit.jupiter.api.extension.ExtendWith
-import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
+import org.springframework.boot.test.autoconfigure.jdbc.JdbcTest
+import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.context.ApplicationContext
 import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.test.context.ContextConfiguration
 import org.springframework.test.context.junit.jupiter.SpringExtension
-import org.springframework.test.context.junit4.SpringRunner
 
 import java.time.LocalDate
 
@@ -27,7 +28,8 @@ import static java.time.format.DateTimeFormatter.ofPattern
 
 @Slf4j
 @ExtendWith(SpringExtension.class)
-//@RunWith(SpringRunner.class)
+//@SpringBootTest
+//@JdbcTest
 @ContextConfiguration(locations = ["classpath:applicationContext-test.xml"])
 class InterDaoJdbcTest {
 
@@ -92,91 +94,91 @@ class InterDaoJdbcTest {
         Assertions.assertEquals expectedCount, interDao.count()
     }
 
-    @Test
-    void create() {
-    }
-
-    @Test
-    void update() {
-    }
-
-    @Test
-    void delete() {
-    }
-
-    @Test
-    void find() {
-    }
-
-    @Test
-    void findAllInter() {
-    }
-
-    @Test
-    void countMois() {
-    }
-
-    @Test
-    void findAllMoisFormatFrParAnnee() {
-    }
-
-    @Test
-    void findAllMoisParAnnee() {
-    }
-
-    @Test
-    void findAllInterDeMoisDansAnnee() {
-    }
-
-    @Test
-    void countInterParMoisDansAnnee() {
-    }
-
-    @Test
-    void countPlpParMoisDansAnnee() {
-    }
-
-    @Test
-    void countRacParMoisDansAnnee() {
-    }
-
-    @Test
-    void countBaapParMoisDansAnnee() {
-    }
-
-    @Test
-    void countBaocParMoisDansAnnee() {
-    }
-
-    @Test
-    void countBafaParMoisDansAnnee() {
-    }
-
-    @Test
-    void countBastParMoisDansAnnee() {
-    }
-
-    @Test
-    void countSavParMoisDansAnnee() {
-    }
-
-    @Test
-    void countPdcParMoisDansAnnee() {
-    }
-
-    @Test
-    void countRacSimpleParMoisDansAnnee() {
-    }
-
-    @Test
-    void countPdcBafaParMoisDansAnnee() {
-    }
-
-    @Test
-    void countPdcBaocBaapParMoisDansAnnee() {
-    }
-
-    @Test
-    void countPdcBastParMoisDansAnnee() {
-    }
+//    @Test
+//    void create() {
+//    }
+//
+//    @Test
+//    void update() {
+//    }
+//
+//    @Test
+//    void delete() {
+//    }
+//
+//    @Test
+//    void find() {
+//    }
+//
+//    @Test
+//    void findAllInter() {
+//    }
+//
+//    @Test
+//    void countMois() {
+//    }
+//
+//    @Test
+//    void findAllMoisFormatFrParAnnee() {
+//    }
+//
+//    @Test
+//    void findAllMoisParAnnee() {
+//    }
+//
+//    @Test
+//    void findAllInterDeMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countInterParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countPlpParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countRacParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countBaapParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countBaocParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countBafaParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countBastParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countSavParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countPdcParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countRacSimpleParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countPdcBafaParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countPdcBaocBaapParMoisDansAnnee() {
+//    }
+//
+//    @Test
+//    void countPdcBastParMoisDansAnnee() {
+//    }
 }
